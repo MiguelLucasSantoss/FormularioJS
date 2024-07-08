@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+    <title>Formulário</title>
+</head>
+<body>
+    <img src="imagens/336242ac77cae267223fb086ceda13c8.png" class="imagem-hover">
+
+    <div class="dados"></div>
+    <center>
+        <h1>Casa de Apostas</h1>
+
+        
+        <label>Nome</label>
+        <input id='nome' placeholder="Coloque seu nome aqui"><br><br>
+
+        <label>Data de Nascimento</label>
+        <input type="date" id='nascimento' placeholder="Coloque sua data de nascimento aqui"><br><br>
+
+        <label>Gênero</label>
+        <div class="sexo">
+            <input type="radio" id="genero" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+
+            <input type="radio" id="genero" name="genero" value="feminino">
+            <label for="feminino">Feminino</label><br>
+
+            <input type="radio" id="genero" name="genero" value="outros">
+            <label class="outrem" for="outros">Outros</label><br>
+        </div>
+
+        <label>Email</label>
+        <input id='email' placeholder="Coloque seu email aqui"><br><br>
+
+        <label>Senha</label>
+        <input type="password" id='senha' placeholder="Coloque sua senha aqui"><br><br>
+
+        <label>Telefone</label>
+        <input id='telefone' placeholder="Coloque seu número aqui"><br><br>
+
+        <div class="Jogos">
+            <h3 class="JogosApostar">Jogos para Apostar</h3>
+
+            <label for="intXpal">Internacional X Palmeiras</label><br>
+            <input type="checkbox" id="intXpal" name="intXpal" valuu="intXpal">
+
+            <label for="flaXflu">Flamengo X Fluminense</label><br>
+            <input type="checkbox" id="flaXflu" name="flaXflu" valuu="flaXflu">
+
+            <label for="atmXatp">Atlético Mineiro X Atlético Paranaense</label><br>
+            <input type="checkbox" id="atmXatp" name="atmXatp" valuu="atmXatp">
+        </div>
+        
+
+        <button type="button" onclick="enviar()">Enviar</button><br><br>
+    </center>
+    </div>
+
+<script src="formulario.js"></script>
+</html>
